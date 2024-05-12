@@ -38,6 +38,10 @@ popular searches from the internet as a whole. As you are typing
 "google.com" many blocks of code run and the suggestions will be refined
 with each keypress. It may even suggest "google.com" before you finish typing
 it.
+The first thing that happens is your computer sends a request to the domain name system (DNS) server. The DNS server is an address book for all domain names on the web. This DNS now sends back the IP address of www.google.com
+The second thing that happens is your computer connects with the server through the IP address. This connection is known as the Transmission control protocol (TCP) through an Internet protocol(IP).
+You could call this process a ‘handshake’
+Your computer, if it's behind a firewall, checks to see if this request is permitted before the connection is made.
 
 The "enter" key bottoms out
 ---------------------------
@@ -602,6 +606,7 @@ The reasons are:
 
 Unable to use the regular parsing techniques, the browser utilizes a custom
 parser for parsing HTML. The parsing algorithm is described in
+
 detail by the HTML5 specification.
 
 The algorithm consists of two stages: tokenization and tree construction.
